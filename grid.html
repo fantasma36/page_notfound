@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid-container {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            padding: 15px;
+            gap: 15px;
+            grid-template-columns: auto auto;
+            grid-template-rows: min-content auto min-content;
+        }
+
+        .grid-container>div {}
+
+        .header {
+            grid-column: 1 / 3;
+            padding: 16px;
+            font-family: "Inconsolata";
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .items2 {
+            align-self: center;
+        }
+
+        .items2 > img {
+            width: 439px;
+        }
+
+        .items3 {
+            align-self: center;
+        }
+
+        .items3 > h1 {
+            font-family: monospace;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-family: monospace;
+            font-size: 1.5rem;
+            margin-top: 2.25rem;
+            margin-bottom: 4rem;
+            font-weight: 400;
+        }
+
+        button {
+            padding: 1.5rem;
+            font-family: monospace;
+        }
+
+        .footer {
+            grid-column: 1 / span 2;
+            text-align: center;
+            font-family: "Montserrat";
+        }
+
+        @media screen and (max-width: 750px) {
+            html{
+               
+            }
+            .items2,
+            .items3 {
+                grid-column: 1 / span 2;
+            }
+            .items2 > img{
+                width: 100%;
+            }
+            .items3 > h1, .items3 > p{
+                width: 100%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">404 not found</div>
+        <div class="items2">
+            <img src="img/Scarecrow.png" alt="" />
+        </div>
+        <div class="items3">
+            <h1>I have bad news for you</h1>
+            <p>
+                The page you are looking form might be removed or temporarily
+                unavailable
+            </p>
+            <button>BACK TO HOMEPAGE</button>
+        </div>
+        <div class="footer">Create by Fantasma36 - devChallenge.io</div>
+    </div>
+</body>
+
+</html>
